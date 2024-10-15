@@ -1,6 +1,6 @@
-nom = "jean"
-prenom = "louis"
-math= 25.5
+nom = str(input("Enter your first name: "))
+prenom = str(input("Enter your last name: "))
+math= float(input("Enter math grade: "))
 anglais= 19.5
 info= 88.5
 promotion = 56
