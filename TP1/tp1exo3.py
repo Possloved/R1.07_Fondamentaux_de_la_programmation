@@ -11,6 +11,3 @@ totM = hourToMinute + minute
 
 
 print("time since beginning month (minutes): ",totM )
-
-
-
