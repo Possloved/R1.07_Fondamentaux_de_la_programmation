@@ -1,41 +1,29 @@
-def calculer_cout(heure_debut, heure_fin):
-    """Calcule le coût de la location en fonction des heures de début et de fin.
+def calcPrice(hStart, hEnd):
 
-    Args:
-        heure_debut (int): Heure de début de la location.
-        heure_fin (int): Heure de fin de la location.
+    if hStart < 0 or hStart > 23 or hEnd< 0 or hEnd> 23:
+        return "hour must be between 0 & 24 !"
+    if hStart == hEnd:
+        return "error. start and end time is identical"
+    if hStart > hEnd:
+        return "error. start time after end time"
 
-    Returns:
-        float: Coût total de la location.
-    """
-
-    # Vérification des heures
-    if heure_debut < 0 or heure_debut > 23 or heure_fin < 0 or heure_fin > 23:
-        return "Les heures doivent être comprises entre 0 et 24 !"
-    if heure_debut == heure_fin:
-        return "Attention ! l'heure de fin est identique à l'heure de début."
-    if heure_debut > heure_fin:
-        return "Attention ! le début de la location est après la fin ..."
-
-    # Calcul du coût
     cout = 0
-    for heure in range(heure_debut, heure_fin):
-        if 0 <= heure < 7 or 17 <= heure < 24:
+    for hour in range(hStart, hEnd):
+        if 0 <= hour < 7 or 17 <= hour < 24:
             cout += 1
         else:
             cout += 2
     return cout
 
-# Programme principal
 while True:
     try:
-        heure_debut = int(input("Heure de début de la location : "))
-        heure_fin = int(input("Heure de fin de la location : "))
-        cout = calculer_cout(heure_debut, heure_fin)
+        hStart = int(input("hour start location : "))
+        hEnd= int(input("hour end location : "))
+        cout = calculer_cout(hStart, hEnd)
         if isinstance(cout, str):
             print(cout)
         else:
-            print(f"Le coût de la location est de {cout} euros.")
+            print(f"price of the location is {cout} euros.")
         break
     except ValueError:
-        print("Veuillez entrer des heures sous forme d'entiers.")
+        print("enter hours as whole numbers")
