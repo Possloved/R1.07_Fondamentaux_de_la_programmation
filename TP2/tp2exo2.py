@@ -1,3 +1,3 @@
-age = int(input("enter age: "))
-annee = int(2024)
-print("your date of birth is ", annee - age)
+age = int(input("Enter your current age : "))
+year = 2024
+print("Your date of birth is",year - age)

@@ -4,6 +4,7 @@ c=input("Entrez la troisieme valeur : ")
 
 print("Les valeurs entrees sont : a = " + a + ", b = " + b + " et c = " + c)
 print("Permutation: a ==> b, b ==> c, c ==> a")
+
 """      *******************************************
          * Completez le programme a partir d'ici.
          *******************************************
@@ -14,5 +15,4 @@ a, b, c = c, a, b
          * Ne rien modifier apres cette ligne.
          *******************************************
 """
-
 print("Les valeurs permutees sont : a = " + a + ", b = " + b + " et c = " + c)
