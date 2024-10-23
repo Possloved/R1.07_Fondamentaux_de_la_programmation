@@ -1,6 +1,4 @@
-sLoc = int(input("Enter time start location :"))
-eLoc = int(input("Enter time end location :"))
+y = 2
 
-if (sLoc>7) and (eLoc>17):
-    pay = (eLoc-sLoc)*2
-e
+y*=2
+print(y)

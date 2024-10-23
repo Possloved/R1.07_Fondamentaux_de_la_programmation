@@ -1,13 +1,16 @@
+y = 1
+z = 1
+loop = 0
+mult = 1
 x = int(input("Enter value : "))
 
+for i in range(x):
+    y = y * mult
+    mult += 1
 
-print("\nFor loop:")
-for i in range (x):
-    print(x)
-    x -= 1
+while loop < x:
+    loop = loop + 1
+    z = z * loop
 
-
-print("\nWhile loop:")
-while y > 0:
-    print(y)
-    y -= 1
+print("For loop : ", y)
+print("While loop : ",z)
