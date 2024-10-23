@@ -4,5 +4,5 @@ y = int(input("entre ta valeur"))
 t = x
 x = y
 y = t
-print("x",x)
-print("y",y)
+print("x = ",x)
+print("y = ",y)
