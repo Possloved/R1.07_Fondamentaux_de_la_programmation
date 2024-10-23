@@ -4,9 +4,6 @@ eau = 2
 ail = 2
 pain = 400
 
-nbConvives = int(input("enter people eating : "))
-
-
 nbConvives=int(input("Entrez le nombre de personne(s) conviées à la fondue : "))
 fromage *=nbConvives / base
 eau *=nbConvives / base
