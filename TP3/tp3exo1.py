@@ -1,1 +1,1 @@
-print("nigger")
+print("fuck you nigga")
