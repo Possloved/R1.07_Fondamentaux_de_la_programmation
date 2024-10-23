@@ -19,7 +19,7 @@ while True:
     try:
         hStart = int(input("hour start location : "))
         hEnd= int(input("hour end location : "))
-        cout = calculer_cout(hStart, hEnd)
+        cout = calcPrice(hStart, hEnd)
         if isinstance(cout, str):
             print(cout)
         else:
