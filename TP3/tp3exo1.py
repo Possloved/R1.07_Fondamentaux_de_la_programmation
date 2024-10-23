@@ -37,3 +37,4 @@ while somme <= X:
     N += 1
     somme = somme_entiers(N)
 print("Le plus grand N est :", N - 1)
+print("done")
