@@ -21,12 +21,11 @@ def print_array(tab):
 
 tab = [64, 25, 12, 22, 11]
 
-print("Selection Sort :")
-print("Original array: ", end="")
+print(f"Selection Sort :\nOriginal array: ", end="")
 print_array(tab)
-
+print("-= Start Sorting =-")
 selection_sort(tab)
-
+print("-= Finish Sorting =-")
 print("Sorted array: ", end="")
 print_array(tab)
 
