@@ -23,8 +23,6 @@ def verifDate(date):
 
     return "Date correcte."
 
-
-# Tests
 dates = ["31021999", "31041000", "32052020", "30032021", "29022022"]
 for date in dates:
     print(f"Vérification de la date {date} : {verifDate(date)}")
