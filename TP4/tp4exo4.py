@@ -1,6 +1,18 @@
-l1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
+nmb=[]
+v = int(input("Input size of list : "))
 
-lc = []
+for i in range(v):
+    y = int(input("Enter the value you want in the list :"))
+    nmb.append(y)
 
-list.sort(l1)
-print(l1)
+mcn = 0
+cm = 0
+for val in nmb:
+
+    x = nmb.count(val)
+    if x > cm:
+        mcn = val
+        cm = x
+
+print(f"\nLe nombre le plus frequent dans la liste est le : {mcn} ({cm} fois)")
+
