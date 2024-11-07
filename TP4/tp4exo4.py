@@ -1,7 +1,6 @@
-list=[]
-v = int(input("Input size of list : "))
+l1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
 
-for i in range(v):
-    y = int(input("Enter the value you want in the list :"))
-    list.append(y)
-print(list)
+lc = []
+
+list.sort(l1)
+print(l1)
