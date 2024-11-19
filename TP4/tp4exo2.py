@@ -16,4 +16,4 @@ print("\nMoyenne de classe : ",statistics.mean(notes))
 
 print("\nNuméro de l’Etudiant | note | ecart a la moyenne")
 for i in range(nombreEtudiants):
-    print(f"{i} | {notes[i]} | {notes[i] - statistics.mean(notes)}")
+    print(f"{i+1} | {notes[i]} | {notes[i] - statistics.mean(notes)}")
