@@ -3,8 +3,8 @@ import string
 
 def nettoyer_texte(texte):
     texte = ''.join(c for c in unicodedata.normalize('NFD', texte)
-                    if unicodedata.category(c) != 'Mn')  # Supprimer accents
-    texte = ''.join(c for c in texte if c.isalnum())  # Supprimer ponctuations
+                    if unicodedata.category(c) != 'Mn')  # del accents
+    texte = ''.join(c for c in texte if c.isalnum())  # del ponctuations
     return texte.lower()
 
 def est_palindrome(texte):
