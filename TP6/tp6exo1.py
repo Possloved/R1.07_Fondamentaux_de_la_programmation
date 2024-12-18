@@ -1,4 +1,4 @@
-L1 = [0] * 3
+L1 = [0] * 3 #Initialisez une liste ne comprenant que trois zéros
 print(L1, type(L1), id(L1))
 #-------------------------------------
 for elem in L1:

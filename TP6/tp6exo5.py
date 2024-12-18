@@ -8,7 +8,7 @@ def nettoyer_texte(texte):
     return texte.lower()
 
 def est_palindrome(texte):
-    texte = nettoyer_texte(texte)
+
     return texte == texte[::-1]
 
 phrase = input("Entrez un mot ou une phrase : ")
